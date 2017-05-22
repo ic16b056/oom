@@ -1,0 +1,36 @@
+﻿[
+  {
+    "Title": "Director of IT",
+    "Name": "Roberto Sanches",
+    "MPerformance": 92,
+    "EmployeeName": "Roberto Sanches",
+    "EmployeePerformance": 92,
+    "EmployeeID": 0,
+    "EmployeeIBAN": null,
+    "EmployeeSalary": 0,
+    "Description": "Roberto Sanches",
+    "Performance": 92,
+    "Value": 3
+  },
+  {
+    "EmployeeName": "Martin Lawrence",
+    "EmployeePerformance": 94,
+    "EmployeeID": 2448,
+    "EmployeeIBAN": "AT50 1200 2470 2481",
+    "EmployeeSalary": 1900,
+    "Description": "Martin Lawrence",
+    "Performance": 94,
+    "Value": 3
+  },
+  {
+    "Name": "Patrick Star",
+    "EmployeeName": "Patrick Star",
+    "EmployeePerformance": 0,
+    "EmployeeID": 0,
+    "EmployeeIBAN": null,
+    "EmployeeSalary": 0,
+    "Description": "Patrick Star",
+    "Performance": 0,
+    "Value": 3
+  }
+]
