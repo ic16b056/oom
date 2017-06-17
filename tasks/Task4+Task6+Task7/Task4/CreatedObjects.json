@@ -1,0 +1,32 @@
+﻿[
+  {
+    "EmployeeName": "Martin Lawrence",
+    "EmployeePerformance": 94,
+    "EmployeeID": 2448,
+    "EmployeeIBAN": "AT50 1200 2470 2481",
+    "EmployeeSalary": 19000,
+    "Description": "Martin Lawrence",
+    "Performance": 94,
+    "Value": 5
+  },
+  {
+    "EmployeeName": "Will Smith",
+    "EmployeePerformance": 98,
+    "EmployeeID": 1002,
+    "EmployeeIBAN": "AT50 1200 1284 2467",
+    "EmployeeSalary": 48900,
+    "Description": "Will Smith",
+    "Performance": 98,
+    "Value": 5
+  },
+  {
+    "EmployeeName": "Chris Brown",
+    "EmployeePerformance": 82,
+    "EmployeeID": 8001,
+    "EmployeeIBAN": "AT50 1200 3782 4287 ",
+    "EmployeeSalary": 28000,
+    "Description": "Chris Brown",
+    "Performance": 82,
+    "Value": 5
+  }
+]

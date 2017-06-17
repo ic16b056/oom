@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Task4
 {
 
@@ -17,13 +18,13 @@ namespace Task4
         void printData();
     }
 
-    class Mitarbeiter : Person
+     class Mitarbeiter : Person
     {
         public string EmployeeName { get; }
         public int EmployeePerformance { get; }
         public int EmployeeID { get; }
         public string EmployeeIBAN { get; }
-        public int EmployeeSalary { get; private set; }
+        public int EmployeeSalary { get;  set; }
         public static int Counter { get; private set; }
 
 
@@ -126,42 +127,5 @@ namespace Task4
         }
 
         #endregion
-
-        public static void Main(string[] args)
-        {
-            int anzMembers = 0;
-            var members = new Person[]
-            {
-                new Abteilung("IT", 84, anzMembers),
-                new Mitarbeiter ("Martin Lawrence", 94, "AT50 1200 2470 2481", 2448, 1900),
-                new Mitarbeiter ("John Smith", 62, "AT50 1200 3007 4028", 1028, 2700),
-            };
-            foreach (var i in members)
-            {
-                anzMembers = i.Value;
-                i.printData();
-            }
-            Abteilung abt = new Abteilung("IT", 92, anzMembers);
-            Console.WriteLine($"Die Anzahl der Mitarbeiter in der Abteilung '{abt.Description}' wurde erhöht!\n");
-
-            var MitarbeiterObjects = new []
-            {
-                new Manager("Director of IT","Roberto Sanches", 92),
-                new Mitarbeiter ("Martin Lawrence", 94, "AT50 1200 2470 2481", 2448, 1900),
-                new Customer ("Patrick Star"),
-            };
-
-            string ausgabe = JsonConvert.SerializeObject(MitarbeiterObjects, Formatting.Indented);
-            Console.WriteLine(ausgabe);
-
-            string datei = @"C:\Users\alekpav1\Desktop\oom\tasks\Task4\Task4\CreatedObjects.json";
-
-            File.Exists(datei);
-            File.WriteAllText(datei, ausgabe, Encoding.UTF8);
-
-            /* read file */
-            string jsonstring = File.ReadAllText(datei);
-            var CreatedObject = JsonConvert.DeserializeObject<Mitarbeiter[]>(jsonstring);   
-        }
     }
 }
