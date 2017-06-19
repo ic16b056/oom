@@ -15,14 +15,15 @@ namespace Task4
         {
             foreach (var x in person)
             {
-                Console.WriteLine($"Employee's salary received: {x.EmployeeSalary}");
+                
                 var task1 = Task.Run(() =>
                 {
+                    Console.WriteLine($"Employee's salary received: {x.EmployeeSalary}");
                     Console.WriteLine($"employee's name: {x.EmployeeName}");
                     x.EmployeeSalary = x.EmployeeSalary+100;
-                    Console.WriteLine($"Employee's salary increased to (+100 EUR): {x.EmployeeSalary}");
+                    //Console.WriteLine($"Employee's salary increased to (+100 EUR): {x.EmployeeSalary}");
                 });
-                task1.ContinueWith(y => Console.WriteLine($"Object {person} converted successfully!\n"));
+                task1.ContinueWith(y => Console.WriteLine($"Employee's salary increased to (+100 EUR): {x.EmployeeSalary}\n"));
             }
             Console.ReadLine();
             Console.WriteLine("Doing something else .. \n");
@@ -51,7 +52,7 @@ namespace Task4
             foreach(var x in person)
             {
                 value = x.EmployeeName.Length;
-                await Task.Delay(1000);
+                await Task.Delay(2000);
                 Console.WriteLine($"Total length of the employee's name is: {value}");
             }
             return value;
